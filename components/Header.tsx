@@ -28,7 +28,7 @@ function Header() {
       <div className="flex w-full flex-wrap justify-between items-center">
         <Link
           href="/"
-          className="text-3xl font-bold text-black hover:opacity-50 cursor-pointer mx-auto sm:mx-0"
+          className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
         >
           <span className="font-extrabold font-sans tracking-tight text-gray-800">
             MIDWEST
