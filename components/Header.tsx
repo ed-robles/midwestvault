@@ -89,14 +89,14 @@ function Header() {
               <SignInButton mode="modal" />
             )}
 
-            {user?.passkeys.length === 0 && (
-              // <button
-              //   onClick={createClerkPasskey}
-              //   className="bg-white hover:bg-gray-700 hover:text-white animate-pulse text-gray-500 font-bold py-2 px-4 rounded border-gray-300 border"
-              // >
-              //   Create Passkey
-              // </button>
-            )}
+{/*             {user?.passkeys.length === 0 && (
+              <button
+                onClick={createClerkPasskey}
+                className="bg-white hover:bg-gray-700 hover:text-white animate-pulse text-gray-500 font-bold py-2 px-4 rounded border-gray-300 border"
+              >
+                Create Passkey
+              </button>
+            )} */}
           </ClerkLoaded>
         </div>
       </div>
