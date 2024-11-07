@@ -54,7 +54,7 @@ function Header() {
         <div className="flex items-center space-x-4 mt-3 sm:mt-0 md:mt-0 lg:mt-0 flex-1 lg:flex-none">
           <Link
             href="/basket"
-            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           >
             <TrolleyIcon className="w-6 h-6" />
             {/* span item count once global state is implemented */}
@@ -69,7 +69,7 @@ function Header() {
             {user && (
               <Link
                 href="/orders"
-                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
               >
                 <PackageIcon className="w-6 h-6" />
                 <span>My Orders</span>

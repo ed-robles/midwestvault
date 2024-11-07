@@ -6,6 +6,7 @@ import { SanityLive } from "@/sanity/lib/live";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
+import Banner from "@/components/Banner";
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
@@ -29,6 +30,7 @@ export default async function RootLayout({
           )}
 
           <main>
+            <Banner />
             <Header />
             {children}
           </main>
