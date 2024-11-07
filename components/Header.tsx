@@ -13,14 +13,14 @@ function Header() {
     state.items.reduce((total, item) => total + item.quantity, 0)
   );
 
-  const createClerkPasskey = async () => {
-    try {
-      const response = await user?.createPasskey();
-      console.log(response);
-    } catch (err) {
-      console.error("Error:", JSON.stringify(err, null, 2));
-    }
-  };
+  // const createClerkPasskey = async () => {
+  //   try {
+  //     const response = await user?.createPasskey();
+  //     console.log(response);
+  //   } catch (err) {
+  //     console.error("Error:", JSON.stringify(err, null, 2));
+  //   }
+  // };
 
   return (
     <header className="flex flex-wrap justify-between items-center px-4 py-2">
