@@ -8,6 +8,7 @@ import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
 import Banner from "@/components/Banner";
+import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
@@ -21,7 +22,7 @@ export default async function RootLayout({
 }>) {
   return (
     <ClerkProvider dynamic>
-      <html lang="en">
+      <html lang="en" className={inter.className}>
         <body>
           {(await draftMode()).isEnabled && (
             <>
