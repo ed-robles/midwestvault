@@ -21,9 +21,6 @@ export default async function Home() {
           DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH
           MIDWEST<span className="italic">VAULT.</span>
         </p>
-        <p>FROM STANDOUT STREETWEAR TO UNIQUE FINDS,</p>
-        <p>EACH PIECE IS CHOSEN FOR ITS STYLE AND DURABILITY,</p>
-        <p>AND IS DESIGNED TO BE A STAPLE IN YOUR WARDROBE.</p>
       </div>
       <div className="flex flex-col items-center justify-top min-h-screen bg-white p-4">
         <ProductsView products={products} categories={categories} />
