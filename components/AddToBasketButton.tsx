@@ -2,7 +2,6 @@
 
 import { Product } from "@/sanity.types";
 import useBasketStore from "@/store/store";
-import { LucideShoppingCart, ShoppingBasketIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface AddToBasketButtonProps {
