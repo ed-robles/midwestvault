@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        mon: ['var(--font-roboto-mono)'],
       },
       colors: {
         background: "hsl(var(--background))",
