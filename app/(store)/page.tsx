@@ -19,7 +19,7 @@ export default async function Home() {
       <div className="w-full mt-2 font-bold  text-gray-900 text-sm p-8 md:px-64 text-center">
         <p>
           DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH
-          MIDWEST<span className="italic">VAULT.</span>
+          MIDWEST<span className="italic font-serif font-medium tracking-widest">VAULT.</span>
         </p>
       </div>
       <div className="flex flex-col items-center justify-top min-h-screen bg-white p-4">
