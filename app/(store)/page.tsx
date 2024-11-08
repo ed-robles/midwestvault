@@ -15,8 +15,8 @@ export default async function Home() {
   );
 
   return (
-    <div>
-      <div className="w-full mt-2 font-mon font-bold  text-gray-900 text-sm p-8 md:px-64 text-center">
+    <div className="font-mon">
+      <div className="w-full mt-2 font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
         <p>
           DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH
           MIDWEST<span className="italic font-serif font-medium tracking-widest">Vault.</span>
