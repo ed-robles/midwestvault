@@ -2,6 +2,7 @@
 
 import { Product } from "@/sanity.types";
 import useBasketStore from "@/store/store";
+import { LucideShoppingCart, ShoppingBasketIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface AddToBasketButtonProps {
@@ -27,39 +28,42 @@ function AddToBasketButton({ product, disabled }: AddToBasketButtonProps) {
   }
 
   return (
-    <div className="flex items-center justify-center space-x-2">
-      <button
-        onClick={() => removeItem(product._id)}
-        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200 ${
-          itemCount === 0
-            ? "bg-gray-100 cursor-not-allowed"
-            : "bg-gray-200 hover:bg-gray-300"
-        }`}
-        disabled={itemCount === 0 || disabled}
-      >
-        <span
-          className={`text-xl font-bold ${itemCount === 0 ? "text-gray-400" : "text-gray-600"}`}
+    <>
+      <div className="flex items-center justify-center space-x-2">
+        <button
+          onClick={() => addItem(product)}
+          className={`w-full flex items-center p-1 justify-center transition-colors duration-200 ${
+            disabled || itemCount >= 1
+              ? "text-black cursor-not-allowed"
+              : "bg-black hover:bg-gray-900 hover:text-black border border-black"
+          }`}
+          disabled={disabled || itemCount >= 1}
         >
-          -
-        </span>
-      </button>
-      <span className="w-8 text-center font-semibold">{itemCount}</span>
-      <button
-        onClick={() => addItem(product)}
-        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200 ${
-          disabled || itemCount >= 1
-            ? "bg-gray-400 cursor-not-allowed"
-            : "bg-black hover:bg-gray-800"
-        }`}
-        disabled={disabled || itemCount >= 1}
-      >
-        <span
-          className={`text-xl font-bold ${itemCount === 0 ? "text-white" : "text-white"}`}
+          <span
+            className={`text-md font-bold ${itemCount === 0 ? "text-white" : "text-black opacity-50"}`}
+          >
+            <p className="inline-block">ADD TO CART</p>
+          </span>
+        </button>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <button
+          onClick={() => removeItem(product._id)}
+          className={`flex items-center mt-2 justify-center transition-colors duration-200 ${
+            itemCount === 0
+              ? "  cursor-not-allowed"
+              : " text-black hover:text-gray-900"
+          }`}
+          disabled={itemCount === 0 || disabled}
         >
-          +
-        </span>
-      </button>
-    </div>
+          <span
+            className={`text-xs font-bold ${itemCount === 0 ? "text-black" : "underline text-black"}`}
+          >
+            <p className="text-center text-xs">REMOVE</p>
+          </span>
+        </button>
+      </div>
+    </>
   );
 }
 

@@ -30,12 +30,12 @@ function Header() {
           href="/"
           className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
         >
-          <span className="font-extrabold font-sans tracking-tight text-gray-800">
+          <span className="font-extrabold font-sans tracking-tight text-gray-900">
             MIDWEST
           </span>
-          <span className="italic font-serif font-medium tracking-widest text-gray-800">
+          <span className="italic font-serif font-medium tracking-widest text-gray-900">
             Vault
-            <Handshake className="inline-block ml-1 mb-1 w-8 h-8 text-gray-800" />
+            <Handshake className="inline-block ml-1 mb-1 w-8 h-8 text-gray-900" />
           </span>
         </Link>
 
@@ -54,7 +54,7 @@ function Header() {
         <div className="flex items-center space-x-4 mt-3 sm:mt-0 md:mt-0 lg:mt-0 flex-1 lg:flex-none">
           <Link
             href="/basket"
-            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
           >
             <TrolleyIcon className="w-6 h-6" />
             {/* span item count once global state is implemented */}
@@ -69,7 +69,7 @@ function Header() {
             {user && (
               <Link
                 href="/orders"
-                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
               >
                 <PackageIcon className="w-6 h-6" />
                 <span>My Orders</span>
@@ -81,15 +81,15 @@ function Header() {
                 <UserButton />
 
                 <div className="hidden: sm:block text-xs`">
-                  <p className="text-gray-400">Welcome Back</p>
-                  <p className="font-bold">{user.fullName}!</p>
+                  <p className="text-gray-900">Welcome Back</p>
+                  <p className="text-gray-900 font-bold">{user.fullName}!</p>
                 </div>
               </div>
             ) : (
               <SignInButton mode="modal" />
             )}
 
-{/*             {user?.passkeys.length === 0 && (
+            {/*             {user?.passkeys.length === 0 && (
               <button
                 onClick={createClerkPasskey}
                 className="bg-white hover:bg-gray-700 hover:text-white animate-pulse text-gray-500 font-bold py-2 px-4 rounded border-gray-300 border"
