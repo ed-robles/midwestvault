@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center">
-          © 2024 <Link href="/" className="hover:underline">MIDWEST<span className="italic font-serif font-medium tracking-widest">VAULT</span></Link> - All Rights Reserved.
+          © 2024 <Link href="/" className="hover:underline">MIDWEST<span className="italic font-serif font-medium tracking-widest">Vault</span></Link> - All Rights Reserved.
         </span>
       </div>
     </div>
