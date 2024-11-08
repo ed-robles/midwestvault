@@ -35,8 +35,8 @@ export default async function RootLayout({
             <Header />
             {children}
           </main>
-          <Footer />
           <SanityLive />
+          <Footer />
         </body>
       </html>
     </ClerkProvider>
