@@ -24,7 +24,7 @@ export default async function Home() {
           <span className="font-sans">
             MIDWEST
             <span className="italic font-serif font-medium tracking-widest">
-              Vault.
+              Vault
             </span>
           </span>
         </div>
