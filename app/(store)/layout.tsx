@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer";
 import { SanityLive } from "@/sanity/lib/live";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
 import Banner from "@/components/Banner";
-import { Roboto_Mono } from 'next/font/google'
+import { Roboto_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-mono',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto-mono",
+});
 
 export default async function RootLayout({
   children,
@@ -37,7 +37,7 @@ export default async function RootLayout({
             </>
           )}
 
-          <main>
+          <main className="font-mon">
             <Banner />
             <Header />
             {children}

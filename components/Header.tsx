@@ -80,7 +80,7 @@ function Header() {
               <div className="flex items-center space-x-2">
                 <UserButton />
 
-                <div className="hidden: sm:block text-xs`">
+                <div className="hidden: sm:block sm:text-2xl`">
                   <p className="text-gray-900">Welcome Back</p>
                   <p className="text-gray-900 font-bold">{user.fullName}!</p>
                 </div>

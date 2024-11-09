@@ -16,12 +16,18 @@ export default async function Home() {
 
   return (
     <div className="font-mon">
-      <div className="w-full mt-2 font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
+      <div className="w-full font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
         <p>
-          DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH
-            <div className="text-xl mt-2"><span className="font-sans"> MIDWEST</span><span className="italic font-serif font-medium tracking-widest">Vault.</span></div>
-          
+          DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH:
         </p>
+        <div className="text-2xl mt-3">
+          <span className="font-sans">
+            MIDWEST
+            <span className="italic font-serif font-medium tracking-widest">
+              Vault.
+            </span>
+          </span>
+        </div>
       </div>
       <div className="flex flex-col items-center justify-top min-h-screen bg-white p-4">
         <ProductsView products={products} categories={categories} />
