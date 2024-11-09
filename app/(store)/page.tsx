@@ -19,7 +19,7 @@ export default async function Home() {
       <div className="w-full mt-2 font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
         <p>
           DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH
-            <div className="text-lg"><span className="font-sans"> MIDWEST</span><span className="italic font-serif font-medium tracking-widest">Vault.</span></div>
+            <div className="text-xl mt-2"><span className="font-sans"> MIDWEST</span><span className="italic font-serif font-medium tracking-widest">Vault.</span></div>
           
         </p>
       </div>
