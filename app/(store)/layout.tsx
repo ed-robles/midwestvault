@@ -12,7 +12,8 @@ import { Roboto_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
-  description: "Welcome to MIDWESTVault",
+  description: "DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH MIDWESTVault",
+  
 };
 
 const roboto_mono = Roboto_Mono({
