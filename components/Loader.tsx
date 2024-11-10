@@ -1,7 +1,9 @@
+import { Handshake } from "lucide-react";
+
 function Loader() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500" />
+      <Handshake className="w-24 h-24 animate-spin text-gray-900" />
     </div>
   );
 }

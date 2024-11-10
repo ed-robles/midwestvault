@@ -1,6 +1,7 @@
 import ProductsView from "@/components/ProductView";
 import { getAllCategories } from "@/sanity/lib/products/getAllCategories";
 import { getAllProducts } from "@/sanity/lib/products/getAllProducts";
+import { ChevronDown } from "lucide-react";
 
 export const dynamic = "force-static";
 export const revalidate = 60; // revalidare every 60 seconds
@@ -17,17 +18,8 @@ export default async function Home() {
   return (
     <div className="font-mon">
       <div className="w-full font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
-        <p>
-          DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH:
-        </p>
-        <div className="text-2xl mt-3">
-          <span className="font-sans">
-            MIDWEST
-            <span className="italic font-serif font-medium tracking-widest">
-              Vault
-            </span>
-          </span>
-        </div>
+        <p>DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES.</p>
+        <ChevronDown className="animate-bounce w-6 h-6 mx-auto mt-6 -mb-4" />
       </div>
       <div className="flex flex-col items-center justify-top min-h-screen bg-white p-4">
         <ProductsView products={products} categories={categories} />

@@ -9,13 +9,16 @@ async function Banner() {
   }
 
   return (
-    <div className="bg-gray-100 text-xs font-bold text-black py-2 mt-2">
+    <div className="bg-gray-100 text-xs text-black py-2 mt-2">
       <div>
-        <p className="text-center">
+        <p className="text-center font-bold">
           {sale.title} - {sale.description}
         </p>
-        <p className="text-center">
-          Use Code: {sale.couponCode} for {sale.discountAmount}% OFF 🏷️
+        <p className="text-center font-bold">
+          Use Code: {sale.couponCode} for {sale.discountAmount}% OFF* 🏷️
+        </p>
+        <p className="text-center ">
+          *Exclusions Apply: One-time use for new customers only.
         </p>
       </div>
     </div>
