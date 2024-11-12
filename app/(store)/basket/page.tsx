@@ -81,9 +81,9 @@ function BasketPage() {
                 }
               >
                 <div className="w-20 h-20 sm:h-24 flex-shrink-0 mr-4">
-                  {item.product.gallery && (
+                  {item.product.image && (
                     <Image
-                      src={imageUrl(item.product.gallery).url()}
+                      src={imageUrl(item.product.image).url()}
                       alt={item.product.name ?? "Product Image"}
                       className="w-full h-full object-cover rounded"
                       width={96}
