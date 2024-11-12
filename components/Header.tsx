@@ -5,7 +5,7 @@ import Link from "next/link";
 import Form from "next/form";
 import { PackageIcon, TrolleyIcon } from "@sanity/icons";
 import useBasketStore from "@/store/store";
-import { Handshake } from "lucide-react";
+import Image from "next/image";
 
 function Header() {
   const { user } = useUser();
@@ -23,20 +23,27 @@ function Header() {
   // };
 
   return (
-    <header className="flex flex-wrap justify-between items-center px-4 py-2">
+    <header className="flex flex-wrap justify-between items-center px-4">
       {/* top row */}
       <div className="flex w-full flex-wrap justify-between items-center">
         <Link
           href="/"
           className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
         >
-          <span className="font-extrabold font-sans tracking-tight text-gray-900">
+          <Image
+            src="/MIDWESTVault_full.png"
+            alt="MIDWEST Vault"
+            width={270}
+            height={120}
+          />
+
+          {/* <span className="font-extrabold font-sans tracking-tight text-gray-900">
             MIDWEST
           </span>
           <span className="italic font-serif font-medium tracking-widest text-gray-900">
             Vault
             <Handshake className="inline-block ml-1 mb-1 w-8 h-8 text-gray-900" />
-          </span>
+          </span> */}
         </Link>
 
         <Form
