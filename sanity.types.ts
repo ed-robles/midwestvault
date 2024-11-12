@@ -121,7 +121,7 @@ export type Product = {
   _rev: string;
   name?: string;
   slug?: Slug;
-  gallery?: Array<{
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -131,8 +131,7 @@ export type Product = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
-    _key: string;
-  }>;
+  };
   price?: number;
   description?: Array<{
     children?: Array<{
@@ -306,7 +305,7 @@ export type MY_ORDERS_QUERYResult = Array<{
       _rev: string;
       name?: string;
       slug?: Slug;
-      gallery?: Array<{
+      image?: {
         asset?: {
           _ref: string;
           _type: "reference";
@@ -316,8 +315,7 @@ export type MY_ORDERS_QUERYResult = Array<{
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
-        _key: string;
-      }>;
+      };
       price?: number;
       description?: Array<{
         children?: Array<{
@@ -411,7 +409,7 @@ export type ALL_PRODUCTS_QUERYResult = Array<{
   _rev: string;
   name?: string;
   slug?: Slug;
-  gallery?: Array<{
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -421,8 +419,7 @@ export type ALL_PRODUCTS_QUERYResult = Array<{
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
-    _key: string;
-  }>;
+  };
   price?: number;
   description?: Array<{
     children?: Array<{
@@ -475,7 +472,7 @@ export type PRODUCT_BY_ID_QUERYResult = {
   _rev: string;
   name?: string;
   slug?: Slug;
-  gallery?: Array<{
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -485,8 +482,7 @@ export type PRODUCT_BY_ID_QUERYResult = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
-    _key: string;
-  }>;
+  };
   price?: number;
   description?: Array<{
     children?: Array<{
@@ -539,7 +535,7 @@ export type PRODUCTS_BY_CATEGORY_QUERYResult = Array<{
   _rev: string;
   name?: string;
   slug?: Slug;
-  gallery?: Array<{
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -549,8 +545,7 @@ export type PRODUCTS_BY_CATEGORY_QUERYResult = Array<{
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
-    _key: string;
-  }>;
+  };
   price?: number;
   description?: Array<{
     children?: Array<{
@@ -603,7 +598,7 @@ export type PRODCUT_SEARCH_QUERYResult = Array<{
   _rev: string;
   name?: string;
   slug?: Slug;
-  gallery?: Array<{
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -613,8 +608,7 @@ export type PRODCUT_SEARCH_QUERYResult = Array<{
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
-    _key: string;
-  }>;
+  };
   price?: number;
   description?: Array<{
     children?: Array<{

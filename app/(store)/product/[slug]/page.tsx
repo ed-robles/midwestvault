@@ -20,7 +20,7 @@ async function ProductPage({
 
   console.log(
     crypto.randomUUID().slice(0, 5) +
-    `>>> rerendered the product page cache for ${slug}`
+      `>>> rerendered the product page cache for ${slug}`
   );
 
   if (!product) {
@@ -33,24 +33,15 @@ async function ProductPage({
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div
-          className={`relative overflow-hidden rounded-lg shadow-lg ${isOutOfStock ? "opacity-50" : ""
-            }`}
+          className={`relative aspect-square overflow-hidden rounded-lg shadow-lg ${isOutOfStock ? "opacity-50" : ""}`}
         >
-          {product.gallery && product.gallery.length > 0 && (
-            <div>
-              {product.gallery.map((image, index) => (
-                <div key={image._key || index} className="mb-4">
-                  <Image
-                    src={imageUrl(image).url()}
-                    alt={product.name ?? `Product Image ${index + 1}`}
-                    width={800}
-                    height={800}
-                    sizes="(max-width:768px) 100vw, (max-width: 1200px) 70vw, 50vw"
-                    className="object-contain w-full h-auto"
-                  />
-                </div>
-              ))}
-            </div>
+          {product.image && (
+            <Image
+              src={imageUrl(product.image).url()}
+              alt={product.name ?? "Product Image"}
+              fill
+              className="object-contain transition-transform duration-300 hover:scale-105"
+            />
           )}
           {isOutOfStock && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
