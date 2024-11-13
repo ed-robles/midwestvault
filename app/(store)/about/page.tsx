@@ -3,14 +3,16 @@ export default function AboutPage() {
     <>
       <div className="w-full text-center">
         <p className="text-lg my-12 p-12 bg-gray-900 text-white font-light">
-          Welcome to <span className="font-semibold">MIDWEST</span>
+          Welcome to <span className="font-semibold font-sans">MIDWEST</span>
           <span className="italic font-serif font-medium tracking-widest">
             Vault
-          </span>{" "}
+          </span>
+          {", "}
           where quality meets exclusivity. Based in the heart of Wisconsin, we
           are a curated, streetwear-inspired shop bringing you a selection of
           clothing and accessories designed for those who value craftsmanship,
-          style, and individuality We believe in doing things differently.
+          style, and individuality.
+          <p>We believe in doing things differently.</p>
         </p>
       </div>
       <div className="w-full text-center">
