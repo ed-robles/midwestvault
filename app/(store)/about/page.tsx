@@ -12,7 +12,6 @@ export default function AboutPage() {
           are a curated, streetwear-inspired shop bringing you a selection of
           clothing and accessories designed for those who value craftsmanship,
           style, and individuality.
-          <p>We believe in doing things differently.</p>
         </p>
       </div>
       <div className="w-full text-center">
