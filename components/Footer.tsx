@@ -18,8 +18,8 @@ export default function Footer() {
             </span> */}
             <Image
               src="/MIDWESTVault_icon_white.png"
-              width={75}
-              height={75}
+              width={60}
+              height={60}
               alt="MIDWEST Vault"
             />
           </Link>
