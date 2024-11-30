@@ -2,9 +2,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="bg-black w-full text-white">
-      <div className="mx-auto p-3 md:py-8">
+      <div className="mx-auto p-1">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <ul className="flex flex-wrap items-center m-2 text-sm sm:mb-0">
+          <ul className="flex flex-wrap items-center m-2 text-sm">
             <li>
               <a href="/about" className="hover:underline me-4 md:me-6">
                 About
@@ -16,7 +16,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a
+                href="mailto:support@midwestvault.com"
+                className="hover:underline"
+              >
                 Contact
               </a>
             </li>
