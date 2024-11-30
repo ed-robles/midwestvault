@@ -59,8 +59,15 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        'spin-slow': 'spin 3s infinite reverse',
+      }
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-};
+  /* eslint-disable */
+
+  plugins: [require("tailwindcss-animate")],
+
+  /* eslint-enable */
+  };
 export default config;
