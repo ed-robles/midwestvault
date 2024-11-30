@@ -23,9 +23,9 @@ function Header() {
   // };
 
   return (
-    <header className="flex flex-wrap justify-between items-center px-4">
+    <header className="flex flex-wrap justify-between items-center px-2">
       {/* top row */}
-      <div className="flex w-full flex-wrap justify-between items-center p-2">
+      <div className="flex w-full flex-wrap justify-between items-center my-2">
         <Link
           href="/"
           className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
@@ -35,6 +35,7 @@ function Header() {
             alt="MIDWEST Vault"
             width={320}
             height={100}
+            className="my-4"
           />
         </Link>
 
@@ -53,7 +54,7 @@ function Header() {
         <div className="flex items-center space-x-4 mt-3 sm:mt-0 md:mt-0 lg:mt-0 flex-1 lg:flex-none">
           <Link
             href="/basket"
-            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
+            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
           >
             <TrolleyIcon className="w-6 h-6" />
             {/* span item count once global state is implemented */}

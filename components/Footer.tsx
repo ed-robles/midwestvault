@@ -4,7 +4,7 @@ export default function Footer() {
     <div className="bg-black w-full text-white">
       <div className="mx-auto p-3 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <ul className="flex flex-wrap items-center m-2 text-md font-medium sm:mb-0">
+          <ul className="flex flex-wrap items-center m-2 text-sm sm:mb-0">
             <li>
               <a href="/about" className="hover:underline me-4 md:me-6">
                 About
