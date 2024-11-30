@@ -25,25 +25,17 @@ function Header() {
   return (
     <header className="flex flex-wrap justify-between items-center px-4">
       {/* top row */}
-      <div className="flex w-full flex-wrap justify-between items-center">
+      <div className="flex w-full flex-wrap justify-between items-center p-2">
         <Link
           href="/"
           className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
         >
           <Image
-            src="/MIDWESTVault_full.png"
+            src="/MIDWEST_VAULT.png"
             alt="MIDWEST Vault"
-            width={270}
-            height={120}
+            width={320}
+            height={100}
           />
-
-          {/* <span className="font-extrabold font-sans tracking-tight text-gray-900">
-            MIDWEST
-          </span>
-          <span className="italic font-serif font-medium tracking-widest text-gray-900">
-            Vault
-            <Handshake className="inline-block ml-1 mb-1 w-8 h-8 text-gray-900" />
-          </span> */}
         </Link>
 
         <Form
@@ -61,7 +53,7 @@ function Header() {
         <div className="flex items-center space-x-4 mt-3 sm:mt-0 md:mt-0 lg:mt-0 flex-1 lg:flex-none">
           <Link
             href="/basket"
-            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
+            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
           >
             <TrolleyIcon className="w-6 h-6" />
             {/* span item count once global state is implemented */}
@@ -76,7 +68,7 @@ function Header() {
             {user && (
               <Link
                 href="/orders"
-                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
+                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
               >
                 <PackageIcon className="w-6 h-6" />
                 <span>Orders</span>
@@ -88,8 +80,8 @@ function Header() {
                 <UserButton />
 
                 <div className="hidden: sm:block sm:text-2xl`">
-                  <p className="text-gray-900">Welcome Back</p>
-                  <p className="text-gray-900 font-bold">{user.fullName}!</p>
+                  <p className="text-black">Welcome Back</p>
+                  <p className="text-black font-bold">{user.fullName}!</p>
                 </div>
               </div>
             ) : (
