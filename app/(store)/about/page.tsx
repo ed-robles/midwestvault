@@ -2,11 +2,9 @@ export default function AboutPage() {
   return (
     <>
       <div className="w-full text-center">
-        <p className="text-lg my-12 p-12 bg-gray-900 text-white font-light">
-          Welcome to <span className="font-semibold font-sans">MIDWEST</span>
-          <span className="italic font-serif font-medium tracking-widest">
-            Vault
-          </span>
+        <p className="text-lg my-12 p-12 bg-black text-white font-light">
+          Welcome to{" "}
+          <span className="font-semibold font-sans">MIDWEST Vault</span>
           {", "}
           where quality meets exclusivity. Based in the heart of Wisconsin, we
           are a curated, streetwear-inspired shop bringing you a selection of
