@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
     <div className="bg-black w-full text-white">
@@ -28,13 +29,16 @@ export default function Footer() {
       </div>
       <div className="bg-white p-2 text-xs text-black text-center">
         <span className="text-[#4FBBFF] text-center animate-spin-slow">
-          <Image
-            src="/RCC_Circle_Blue.png"
-            className="ml-1 inline animate-spin-slow"
-            width={50}
-            height={50}
-            alt="logo"
-          />
+          <Link href="https://roblescreativeco.com">
+            {" "}
+            <Image
+              src="/RCC_Circle_Blue.png"
+              className="ml-1 inline animate-spin-slow"
+              width={50}
+              height={50}
+              alt="logo"
+            />
+          </Link>
         </span>
       </div>
     </div>
