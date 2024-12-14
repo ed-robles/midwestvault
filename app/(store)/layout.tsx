@@ -8,7 +8,6 @@ import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
 import Banner from "@/components/Banner";
 import { Roboto_Mono } from "next/font/google";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
