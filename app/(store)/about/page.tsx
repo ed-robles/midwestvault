@@ -17,8 +17,7 @@ export default function AboutPage() {
       <div className="w-full flex grow text-center">
         <p className="text-lg my-12 p-12 text-gray-900 font-light">
           Our collections are handpicked and available in limited quantities,
-          ensuring that each piece is as unique as the people who wear it. We do
-          not restock items. Once they are gone, they are gone.
+          ensuring that each piece is as unique as the people who wear it.
         </p>
       </div>
       <hr />
