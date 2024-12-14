@@ -23,7 +23,7 @@ function Header() {
   // };
 
   return (
-    <header className="flex flex-wrap justify-between items-center px-2">
+    <header className="flex flex-wrap justify-between items-center px-2 dark:bg-white">
       {/* top row */}
       <div className="flex w-full flex-wrap justify-between items-center my-2">
         <Link
@@ -31,7 +31,7 @@ function Header() {
           className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
         >
           <Image
-            src="/MIDWEST_VAULT.png"
+            src="/MIDWEST-VAULT-White-New.png"
             alt="MIDWEST Vault"
             width={320}
             height={100}
@@ -47,18 +47,18 @@ function Header() {
             type="text"
             name="query"
             placeholder="Search for products"
-            className="bg-gray-100 text-gray-800 px-4 py-2 rounded focus:outline focus:ring-2 focus:ring-black focus:ring-opacity-50 border w-full max-w-4xl"
+            className="bg-white text-gray-800 px-4 py-2 focus:outline-none focus:ring-black focus:ring-opacity-50 border w-full max-w-4xl"
           />
         </Form>
 
         <div className="flex items-center space-x-4 mt-3 sm:mt-0 md:mt-0 lg:mt-0 flex-1 lg:flex-none">
           <Link
             href="/basket"
-            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
+            className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black border text-white font-bold py-2 px-4"
           >
             <TrolleyIcon className="w-6 h-6" />
             {/* span item count once global state is implemented */}
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+            <span className="absolute -top-2 -right-2 bg-white text-black rounded-full w-5 h-5 flex items-center justify-center text-xs">
               {itemCount}
             </span>
             <span>Cart</span>
@@ -69,7 +69,7 @@ function Header() {
             {user && (
               <Link
                 href="/orders"
-                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
+                className="flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black border text-white font-bold py-2 px-4"
               >
                 <PackageIcon className="w-6 h-6" />
                 <span>Orders</span>
@@ -78,15 +78,21 @@ function Header() {
 
             {user ? (
               <div className="flex items-center space-x-2">
-                <UserButton />
+                <UserButton
+                  appearance={{
+                    elements: { userButtonAvatarBox: "w-10 h-10" },
+                  }}
+                />
 
-                <div className="hidden: sm:block sm:text-2xl`">
-                  <p className="text-black">Welcome Back</p>
-                  <p className="text-black font-bold">{user.fullName}!</p>
+                <div className="hidden sm:block sm:text-xl">
+                  <p className="text-white">Welcome Back</p>
+                  <p className="text-white font-bold">{user.fullName}!</p>
                 </div>
               </div>
             ) : (
-              <SignInButton mode="modal" />
+              <span className="text-white">
+                <SignInButton mode="modal" />
+              </span>
             )}
 
             {/*             {user?.passkeys.length === 0 && (

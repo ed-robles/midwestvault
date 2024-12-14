@@ -34,8 +34,8 @@ function BasketPage() {
   if (groupedItems.length === 0) {
     return (
       <div className="container mx-auto p-4 flex flex-col items-center justify-center min-h-[50vh]">
-        <h1 className="text-2xl font-bold mb-6 text-black">Your Basket</h1>
-        <p className="text-gray-600 text-lg">Your Basket is empty.</p>
+        <h1 className="text-2xl font-bold mb-6 text-white">Cart</h1>
+        <p className="text-white text-lg">Your cart is empty.</p>
       </div>
     );
   }
@@ -91,7 +91,7 @@ function BasketPage() {
                     />
                   )}
                 </div>
-                <div className="min-w-0">
+                <div className="min-w-0 text-white">
                   <h2 className="text-lg sm:text-xl font-semibold">
                     {item.product.name}
                   </h2>
@@ -130,7 +130,7 @@ function BasketPage() {
             <button
               onClick={handleCheckout}
               disabled={isLoading}
-              className="mt-4 w-full bg-black text-white px-4 py-2 rounded hover:bg-gray-900 disabled:bg-gray-400"
+              className="mt-4 w-full bg-black text-white px-4 py-2 rounded  hover:font-bold disabled:bg-gray-400"
             >
               {isLoading ? "Processing..." : "Checkout"}
             </button>

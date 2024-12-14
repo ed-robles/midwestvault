@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <ClerkProvider dynamic>
       <html lang="en" className={`${roboto_mono.variable}`}>
-        <body>
+        <body className="bg-black">
           {(await draftMode()).isEnabled && (
             <>
               <DisableDraftMode />

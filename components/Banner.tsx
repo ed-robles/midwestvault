@@ -9,7 +9,7 @@ async function Banner() {
   }
 
   return (
-    <div className="bg-gray-100 text-xs text-black py-2 mt-2">
+    <div className="bg-black border-b border-white text-xs text-white  py-2">
       <div>
         <p className="text-center font-bold">
           {sale.title} - {sale.description}
@@ -18,7 +18,7 @@ async function Banner() {
           Use Code: {sale.couponCode} for {sale.discountAmount}% OFF* 🏷️
         </p>
         <p className="text-center ">
-          *Exclusions Apply: One-time use for new customers only.
+          *Exclusions Apply; One-time use for new customers only.
         </p>
       </div>
     </div>

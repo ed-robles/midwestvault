@@ -9,7 +9,7 @@ function ProductThum({ product }: { product: Product }) {
   return (
     <Link
       href={`/product/${product.slug?.current}`}
-      className={`group flex flex-col bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-200 overflow-hidden ${isOutofStock ? "opacity-50" : ""}`}
+      className={`group flex flex-col bg-white  shadow-sm border hover:shadow-md transition-all duration-200 overflow-hidden ${isOutofStock ? "opacity-50" : ""}`}
     >
       <div className="relative aspect-square w-full h-full overflow-hidden">
         {product.image && (
@@ -30,11 +30,11 @@ function ProductThum({ product }: { product: Product }) {
       </div>
 
       <div className="p-4">
-        <h2 className="text-lg font-semibold text-gray-800 truncate">
+        <h2 className="text-lg font-semibold text-black truncate">
           {product.name}
         </h2>
 
-        <p className="mt-2 text-sm text-gray-600 line-clamp-2">
+        <p className="mt-2 text-sm text-black line-clamp-2">
           {product.description
             ?.map((block) =>
               block._type === "block"
