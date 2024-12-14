@@ -18,7 +18,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen font-mon">
-      <div className="w-full font-bold text-gray-900 text-sm p-8 md:px-64 text-center">
+      <div className="w-full font-bold text-white text-sm p-8 md:px-64 text-center">
         <p>DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES.</p>
         <ChevronDown className="animate-bounce w-6 h-6 mx-auto mt-6 -mb-4" />
       </div>

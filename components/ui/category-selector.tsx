@@ -40,7 +40,7 @@ export function CategorySelectorComponent({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full max-w-full relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black hover:bg-gray-900 text-white hover:text-white font-bold py-2 px-4 rounded"
+          className="w-full max-w-full relative flex justify-center sm:justify-start sm:flex-none items-center space-x-2 bg-black text-white hover:bg-black hover:text-white rounded-none font-bold py-2 px-4"
         >
           {value
             ? categories.find((category) => category._id === value)?.title

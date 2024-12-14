@@ -34,12 +34,12 @@ function AddToBasketButton({ product, disabled }: AddToBasketButtonProps) {
           className={`w-full flex items-center p-1 justify-center transition-colors duration-200 ${
             disabled || itemCount >= 1
               ? "text-black cursor-not-allowed"
-              : "bg-black hover:bg-gray-900 hover:text-black border border-black"
+              : "bg-black hover:border border-white"
           }`}
           disabled={disabled || itemCount >= 1}
         >
           <span
-            className={`text-md font-bold ${itemCount === 0 ? "text-white" : "text-black opacity-50"}`}
+            className={`text-md font-bold ${itemCount === 0 ? "text-white" : "text-white opacity-50"}`}
           >
             <p className="inline-block">ADD TO CART</p>
           </span>
@@ -56,7 +56,7 @@ function AddToBasketButton({ product, disabled }: AddToBasketButtonProps) {
           disabled={itemCount === 0 || disabled}
         >
           <span
-            className={`text-xs font-bold ${itemCount === 0 ? "text-black" : "underline text-black"}`}
+            className={`text-xs font-bold ${itemCount === 0 ? "text-black" : "underline text-white"}`}
           >
             <p className="text-center text-xs">REMOVE</p>
           </span>

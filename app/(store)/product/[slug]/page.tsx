@@ -50,9 +50,9 @@ async function ProductPage({
           )}
         </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between text-white">
           <div>
-            <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+            <h1 className="text-3xl font-bold -mt-4 mb-4">{product.name}</h1>
             <div className="text-xl font-semibold mb-4">
               ${product.price?.toFixed(2)}
             </div>

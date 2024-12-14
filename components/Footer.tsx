@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="bg-black w-full text-white">
+    <div className="bg-black w-full text-white ">
       <div className="mx-auto p-1">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-between border-t">
           <ul className="flex flex-wrap items-center m-2 text-sm">
             <li>
               <a href="/about" className="hover:underline me-4 md:me-6">

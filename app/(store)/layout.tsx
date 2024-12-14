@@ -8,6 +8,7 @@ import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
 import Banner from "@/components/Banner";
 import { Roboto_Mono } from "next/font/google";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MIDWEST Vault",
@@ -29,7 +30,7 @@ export default async function RootLayout({
   return (
     <ClerkProvider dynamic>
       <html lang="en" className={`${roboto_mono.variable}`}>
-        <body>
+        <body className="bg-black">
           {(await draftMode()).isEnabled && (
             <>
               <DisableDraftMode />
