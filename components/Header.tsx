@@ -23,7 +23,7 @@ function Header() {
   // };
 
   return (
-    <header className="flex flex-wrap justify-between items-center px-2 bg-black">
+    <header className="flex flex-wrap justify-between items-center px-4 bg-black">
       {/* top row */}
       <div className="flex w-full flex-wrap justify-between items-center my-2">
         <Link

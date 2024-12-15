@@ -16,8 +16,8 @@ async function Orders() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black p-4">
-      <div className="bg-white p-4 sm:p-8 rounded-xl shadow-lg w-full max-w-4xl">
-        <h1 className="text-4xl font-bold text-gray-900 tracking-tight mb-8">
+      <div className="bg-black p-4 sm:p-8 rounded-xl shadow-lg w-full max-w-4xl">
+        <h1 className="text-4xl font-bold text-white tracking-tight mb-8">
           Orders
         </h1>
 
