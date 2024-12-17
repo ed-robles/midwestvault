@@ -28,7 +28,7 @@ function Header() {
       <div className="flex w-full flex-wrap justify-between items-center my-2">
         <Link
           href="/"
-          className="text-3xl font-bold text-gray-800 hover:opacity-90 cursor-pointer mx-auto sm:mx-0"
+          className="text-3xl font-bold text-gray-800 hover:opacity-95 cursor-pointer mx-auto sm:mx-0"
         >
           <Image
             src="/MIDWEST-VAULT-White-New.png"
@@ -47,7 +47,7 @@ function Header() {
             type="text"
             name="query"
             placeholder="Search for products"
-            className="bg-white text-gray-800 px-4 py-2 focus:outline-none focus:ring-black focus:ring-opacity-50 border w-full max-w-4xl"
+            className="bg-white px-4 text-black py-2 focus:outline-none focus:ring-black focus:ring-opacity-50 border w-full max-w-4xl"
           />
         </Form>
 
