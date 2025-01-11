@@ -10,7 +10,7 @@ import Banner from "@/components/Banner";
 import { Roboto_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "MIDWEST Vault",
+  title: "MIDWEST VAULT",
   description:
     "DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH MIDWESTVault",
 };
