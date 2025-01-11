@@ -6,13 +6,12 @@ import { SanityLive } from "@/sanity/lib/live";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { DisableDraftMode } from "@/components/DisableDraftModeButton";
-import Banner from "@/components/Banner";
 import { Roboto_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "MIDWEST VAULT",
   description:
-    "DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH MIDWESTVault",
+    "DISCOVER A CURATED SELECTION OF QUALITY CLOTHING AND ACCESSORIES WITH MIDWEST VAULT",
 };
 
 const roboto_mono = Roboto_Mono({
@@ -38,7 +37,6 @@ export default async function RootLayout({
           )}
 
           <main className="font-mon">
-            <Banner />
             <Header />
             {children}
           </main>
